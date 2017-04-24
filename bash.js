@@ -13,12 +13,8 @@ process.stdin.on('data', function (data) {
     if(cmd === 'date') cmds.date();
     if(cmd === 'ls') cmds.ls();
     if(cmd === 'cat') cmds.cat.apply(null,argument);
-    if(cmd === 'head')cmds.head.apply(null,argument);
-     process.stdout.write('\nprompt > ');
-     
+    if(cmd === 'head') cmds.head.apply(null,argument);
+    if(cmd === 'echo') cmds.echo.apply(null,argument);
 });
 
-function done(output) {
-    
-}
 
