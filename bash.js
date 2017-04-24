@@ -15,6 +15,7 @@ process.stdin.on('data', function (data) {
     if(cmd === 'cat') cmds.cat.apply(null,argument);
     if(cmd === 'head') cmds.head.apply(null,argument);
     if(cmd === 'echo') cmds.echo.apply(null,argument);
+    if(cmd === 'curl') cmds.curl.apply(null,argument);
 });
 
 
